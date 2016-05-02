@@ -1,0 +1,74 @@
+body {
+  padding-top: 50px;
+  background-image: url("treebark.jpg");
+}
+
+.main-content {
+  padding: 40px 15px;
+}
+
+.images {
+  
+  max-width: 300px;
+  padding-top: 10px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.panel-heading {
+  font-size: 20px;
+}
+
+dt {
+  line-height: 1.75;
+}
+
+.table-bordered>tbody>tr>th {
+  background-color: white;
+}
+
+.row {
+  
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+dd {
+  padding-left: 7px;
+}
+
+dl {
+  margin-bottom: 0px;
+}
+
+.multicolumn {
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+}
+
+.columnbreak {
+  break-after: always;
+}
+
+#reorder {
+  float: right;
+}
+
+#common {
+  width: 250px;
+}
+
+/*#range {
+  margin-left:210px;
+  
+}*/
+
+#rangemap{
+  float: right;
+  height:130px;
+}
+
+

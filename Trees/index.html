@@ -1,0 +1,141 @@
+<!DOCTYPE html >
+<html lang="en"
+      ng-app="codecraft" >
+<head >
+	<title>Pennsylvania Trees</title >
+	<link href="../libs/bootstrap/dist/css/bootstrap.min.css"
+	      rel="stylesheet" >
+	<link href="main.css"
+	      rel="stylesheet" >
+</head >
+
+<body >
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container" >
+		<div class="navbar-header" >
+			<a class="navbar-brand"
+			   href="/" >Pennsylvania Trees
+			</a >
+		</div >
+	</div >
+</nav >
+
+<div class="container main-content" >
+
+	<div class="row" >
+		<div class="col-md-6"
+		     ng-controller="TreeListController" >
+			<div class="row" >
+				<div class="col-md-12" >
+					<form class="form-inline well well-sm" >
+						<span class="glyphicon glyphicon-search" ></span >
+
+						<div class="form-group" >
+							<input type="text"
+							       class="form-control"
+							       id="common"
+							       ng-model="search"
+							       placeholder="Search common or species name..."
+									/>
+						</div >
+
+						<span class="glyphicon glyphicon-sort-by-attributes" ></span >
+
+						<div class="form-group" id="reorder">
+							<select class="form-control"
+							        ng-model="order" >
+								<option value="common" >Common Name (ASC)</option >
+								<option value="-common" >Common Name (DEC)</option >
+								<option value="species" >Species Name (ASC)</option >
+								<option value="-species" >Species Name (DEC)</option >
+							</select >
+						</div >
+
+					</form >
+
+					<table class="table table-bordered" >
+
+						<tr >
+							<!--<th >#</th >-->
+							<th >Common Name
+								<span ng-click="order = 'common'"
+								      class="glyphicon glyphicon-menu-up" ></span >
+								<span ng-click="order = '-common'"
+								      class="glyphicon glyphicon-menu-down" ></span >
+							</th >
+							<th >Species Name
+								<span ng-click="order = 'species'"
+								      class="glyphicon glyphicon-menu-up" ></span >
+								<span ng-click="order = '-species'"
+								      class="glyphicon glyphicon-menu-down" ></span >
+							</th >
+						</tr >
+						
+						<div class="tablecolor">
+
+						<tr ng-repeat="tree in filteredTrees = (info.trees | filter:search | orderBy:order)"
+						    ng-style="{'background-color': tree.common == info.selectedTree.common ? 'lightgray' : 'white'}"
+						    ng-click="info.selectedTree = tree" >
+							<!--<td >{{ $index }}</td >-->
+							<td >{{ tree.common }}</td >
+							<td ><em>{{ tree.species }}</em></td >
+						</tr >
+						<tr ng-show="filteredTrees.length == 0" >
+							<td colspan="4" >
+								<div class="alert alert-info" >
+									<p class="text-center" >No results found for search term '{{ search }}'</p >
+								</div >
+							</td >
+							</div>
+						</tr >
+
+
+					</table >
+
+				</div >
+			</div >
+
+		</div >
+		<div class="col-md-2">
+			
+		</div>
+		<div class="col-md-4" class="multicolumn"
+		     ng-controller="TreeDetailController" >
+
+			<div class="panel panel-default" >
+				<div class="panel-heading" >Details</div >
+				<div class="panel-body" >
+     		
+					<dl class="multicolumn">
+						<dt >Common Name</dt >
+						<dd >{{info.selectedTree.common}}</dd >
+						<dt >Species Name</dt >
+						<dd ><em>{{info.selectedTree.species}}</em></dd >
+						<dt >Fruit Type</dt >
+						<dd >{{info.selectedTree.fruit}}</dd >
+						<dt class="columnbreak">Range Map</dt >
+						<dd ><img id="rangemap" ng-src="{{info.selectedTree.range}}"</dd >
+					</dl>
+					<dl>
+						<dt >Habitat</dt >
+						<dd >{{info.selectedTree.habitat}}</dd >
+						<dt >Uses</dt >
+						<dd >{{info.selectedTree.uses}}</dd >
+						<dt >Niche</dt >
+						<dd >{{info.selectedTree.niche}}</dd >
+						<dt >Image</dt >
+						<dd ></dd><img class="images" ng-src="{{info.selectedTree.image}}"</dd >
+					</dl >
+
+				</div >
+			</div >
+		</div >
+	</div >
+</div >
+
+
+<script src="../libs/angular/angular.min.js" ></script>
+<script src="main.js" ></script>
+</body >
+</html >
+
