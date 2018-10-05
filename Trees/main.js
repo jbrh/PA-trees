@@ -88,8 +88,8 @@ app.service('InformationService', function () {
 				"habitat": "Pioneer tree on disturbed sites, forms colonies",
 				"uses": "Tea, essential oil, soap",
 				"niche": "Host plant for butterflies, fruit and bark an important food source for many birds and mamals",
-				"image": "http://botany.si.edu/PlantImages/images/PCD_0013/img0033.jpg",
-				"range": "https://upload.wikimedia.org/wikipedia/en/7/70/Sassafras_albidum_range_map.jpg"
+				"image": "http://www.carolinanature.com/trees/saal1170647.jpg",
+				"range": "https://upload.wikimedia.org/wikipedia/commons/7/70/Sassafras_albidum_range_map.jpg"
 			},
 			{
 				"common": "American Beech",
@@ -98,7 +98,7 @@ app.service('InformationService', function () {
 				"habitat": "Shade tolerant tree of moist, but well-drained woodlands",
 				"uses": "Flooring, furniture, containers",
 				"niche": "Mast is important food source for many birds and mammals",
-				"image": "http://botany.si.edu/PlantImages/images/RAH_039/rah03893.jpg",
+				"image": "https://collections.nmnh.si.edu/search/botany/search.php?action=10&height=310&width=246&irn=10287771",
 				"range": "https://upload.wikimedia.org/wikipedia/commons/5/55/Fagus_grandifolia_range_map_1.png"
 			},
 			{
@@ -108,7 +108,7 @@ app.service('InformationService', function () {
 				"habitat": "Heavy well-drained soils on north or east facing slopes",
 				"uses": "Flooring, interior woodwork, ornamental shade",
 				"niche": "deer, bearAcorns are eaten by squirrels, blue jays, crows, red-headed woodpeckers, deer, turkey, quail, mice, chipmunks, ducks and raccoons",
-				"image": "http://botany.si.edu/PlantImages/images/RAH_095/RAH10679.jpg",
+				"image": "https://images4-e.ravelrycache.com/uploads/renatabrenner/92540683/white_oak2_medium.jpg",
 				"range": "https://upload.wikimedia.org/wikipedia/commons/0/07/Quercus_alba_range_map_1.png"
 			},
 			{
@@ -148,7 +148,7 @@ app.service('InformationService', function () {
 				"habitat": "Prefer deep, moist, well-drained and slightly acidic soils",
 				"uses": "Ornamental shade tree",
 				"niche": "Early summer fruits are eaten by many birds",
-				"image": "http://www.ganondagan.org/portals/0/Images/hiking/CucumberMagnolia.JPG",
+				"image": "https://www.uoguelph.ca/arboretum/sites/uoguelph.ca.arboretum/files/public/IMG_1420-cucumbermagnoliabloom-500W.jpg",
 				"range": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Magnolia_acuminata_range_map_5.png"
 			},
 			{
@@ -169,7 +169,7 @@ app.service('InformationService', function () {
 				"uses": "Basswood is said to be a soil-enriching species, bringing calcium and magnesium up from deep in the soil profile and depositing it in leaf litter",
 				"niche": "Spring buds are important for birds and deer in winter. Fruits are eaten by birds and small mammals. The wood decays easily and produces many cavities which are used by cavity-nesting animals (wood ducks, pileated woodpeckers, other birds, and small mammals). Basswood is a prolific nectar producer and pollination by honeybees results in a choice grade of honey.",
 				"image": "http://sites.ipfw.edu/native-trees/images/BasswoodSmall.jpg",
-				"range": "https://upload.wikimedia.org/wikipedia/en/f/fa/Tlilia_americana_map.png"
+				"range": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Tlilia_americana_map.png"
 			},
 			{
 				"common": "Red Mulberry",
